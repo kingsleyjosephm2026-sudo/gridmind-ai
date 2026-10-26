@@ -1,33 +1,19 @@
-# GridMind AI
+# ⚡ GridMind AI — Smarter Energy. A More Sustainable Future.
 
-Energy forecasting, anomaly detection, battery-cost optimization, recommendations and savings tracking — a **prototype under development**.
-All data is **SIMULATED**. No real grid connection, no deployed customers, no verified savings.
+**Building toward a future where energy is predicted intelligently, optimized efficiently, and used sustainably.**
 
-## Features
-React + TypeScript dashboard (Overview, Forecast, Battery, Anomalies, Recommendations, Savings Verification) over a FastAPI backend.
-- Forecast: baseline vs gradient boosting, chronological split, baseline fallback
-- Optimizer: SciPy linear program with SOC/power/efficiency/reserve constraints
-- Anomalies: robust z-score by weekday-hour (candidates, not confirmed faults)
-- Recommendations + savings tracking persisted in SQLite; "Verified" is never automatic
-- Simulated live feed (start/pause/reset) that appends readings used by all analytics; CSV export
-- CSV validation endpoint with rejected-row reasons
+GridMind AI is an AI-powered energy analytics and grid optimization prototype that combines machine learning, anomaly detection, and battery optimization to explore smarter energy-management decisions and potential cost savings.
 
-## Run with Docker (simplest)
-```
-cp .env.example .env
-docker compose up --build
-```
-App + API on one port: http://localhost:8000  ·  API docs: http://localhost:8000/docs
+🌍 **Vision:** Help shape a future of more efficient, data-driven, and sustainable energy systems.
 
-## Deploy (Render, free tier)
-Render dashboard → New → Blueprint → select this repo (uses `render.yaml`). Free instances sleep when idle and lose SQLite data on restart.
+**Key Features**
+- 📈 Energy demand forecasting
+- 🔍 Anomaly detection
+- 🔋 Battery scheduling optimization
+- 💡 Intelligent recommendations
+- 📊 Energy analytics and savings tracking
 
-## Run without Docker
-```
-pip install -r requirements.txt && uvicorn api.main:app --reload
-cd frontend && npm install && npm run dev      # http://localhost:5173
-python -m unittest discover -s tests -v
-```
+**Tech Stack:** Python · FastAPI · React · TypeScript · SciPy · SQLite · Docker
 
-## Status
-See LIMITATIONS.md. Not yet built: PostgreSQL/Alembic, solar ML model, demand charges, auth.
+**Project Status:** Prototype under development. All data is simulated; real-world impact and savings have not yet been validated.
+
