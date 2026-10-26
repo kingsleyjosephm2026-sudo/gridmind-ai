@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: gridmind-ai
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
