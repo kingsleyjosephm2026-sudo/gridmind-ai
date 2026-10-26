@@ -1,0 +1,9 @@
+body{margin:0;font-family:system-ui,sans-serif;background:#f5f7fa;color:#14213d}
+.layout{display:flex;min-height:100vh}nav{width:210px;background:#14213d;padding:16px}nav h1{color:#fff;font-size:18px}
+nav button{display:block;width:100%;text-align:left;margin:4px 0;padding:8px 10px;border:0;border-radius:6px;background:transparent;color:#cbd5e1;cursor:pointer}
+nav button.on{background:#2563eb;color:#fff}main{flex:1;padding:24px;max-width:1000px}
+.banner{background:#fff3cd;border:1px solid #e0c36a;padding:8px 12px;border-radius:6px;margin-bottom:16px;font-size:14px}
+.card{background:#fff;border-radius:8px;padding:16px;margin-bottom:16px;box-shadow:0 1px 3px #0001}
+.kpis{display:flex;gap:12px;flex-wrap:wrap}.kpi{background:#fff;padding:12px 16px;border-radius:8px;min-width:140px}.kpi b{display:block;font-size:20px}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:6px;border-bottom:1px solid #e5e7eb}
+input,select,button.act{padding:6px;margin:2px}.err{color:#b91c1c}
